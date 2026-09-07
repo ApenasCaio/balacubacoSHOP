@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="foldBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#27272a"/>
+    </linearGradient>
+    <linearGradient id="foldScreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#9333ea" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Left Screen Half -->
+  <path d="M 85 60 L 195 70 L 195 330 L 85 340 Z" fill="url(#foldBody)" filter="url(#shadow)" stroke="#52525b" stroke-width="2"/>
+  <path d="M 93 68 L 192 76 L 192 324 L 93 332 Z" fill="url(#foldScreen)"/>
+  <!-- Right Screen Half -->
+  <path d="M 205 70 L 315 60 L 315 340 L 205 330 Z" fill="url(#foldBody)" filter="url(#shadow)" stroke="#52525b" stroke-width="2"/>
+  <path d="M 208 76 L 307 68 L 307 332 L 208 324 Z" fill="url(#foldScreen)"/>
+  <!-- Hinge Central Line -->
+  <rect x="196" y="68" width="8" height="264" fill="#09090b"/>
+  <!-- Fold graphic effect -->
+  <circle cx="200" cy="200" r="50" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="3"/>
+  <text x="200" y="206" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">FLEX</text>
+</svg>

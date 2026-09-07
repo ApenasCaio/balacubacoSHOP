@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="laptopLid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="laptopScreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#3b0764"/>
+      <stop offset="100%" stop-color="#6b21a8"/>
+    </linearGradient>
+    <linearGradient id="laptopBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Laptop Screen Lid -->
+  <rect x="70" y="70" width="260" height="175" rx="12" fill="url(#laptopLid)" filter="url(#shadow)" stroke="#64748b" stroke-width="2"/>
+  <!-- Screen Display -->
+  <rect x="80" y="80" width="240" height="155" rx="6" fill="url(#laptopScreen)"/>
+  <!-- Screen Wallpaper Visuals -->
+  <circle cx="200" cy="155" r="42" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2.5"/>
+  <path d="M80 190 Q150 140 320 180 L320 235 L80 235 Z" fill="rgba(255,255,255,0.12)"/>
+  <text x="200" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">NOTECUBA 15</text>
+  <!-- Camera dot -->
+  <circle cx="200" cy="75" r="3" fill="#0f172a"/>
+  <!-- Laptop Base/Keyboard Deck -->
+  <polygon points="40,265 360,265 330,245 70,245" fill="url(#laptopBase)" stroke="#475569" stroke-width="1.5"/>
+  <!-- Front Lip & Trackpad Notch -->
+  <rect x="40" y="265" width="320" height="10" rx="3" fill="#1e293b"/>
+  <rect x="175" y="265" width="50" height="4" rx="2" fill="#94a3b8"/>
+</svg>

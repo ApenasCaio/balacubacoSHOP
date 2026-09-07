@@ -1,0 +1,20 @@
+services:
+  balacubacoshop:
+    build: .
+    container_name: balacubacoshop
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DB_PATH=/app/data/balacubaco.db
+      # LAB_MODE=true keeps verbose errors/debug endpoints on for the classroom.
+      - LAB_MODE=true
+    volumes:
+      - balacubaco-data:/app/data
+      - balacubaco-uploads:/app/server/uploads
+    restart: unless-stopped
+
+volumes:
+  balacubaco-data:
+  balacubaco-uploads:

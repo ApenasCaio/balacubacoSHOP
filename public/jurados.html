@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel dos Jurados - BalacubacoSHOP</title>
+  <link rel="icon" href="/images/logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <main class="container">
+    <div class="lab-hero" style="margin-bottom:24px;">
+      <h1 class="mt-0">Painel dos Jurados</h1>
+      <p>Visao ao vivo dos participantes do laboratorio. A tela mostra quem esta ativo, a pontuacao e o progresso por participante.</p>
+      <div class="badge badge-success" id="board-status">Atualizando...</div>
+    </div>
+
+    <div class="grid-3" id="board-stats" style="margin-bottom:24px;">
+      <div class="card">
+        <div class="text-muted">Participantes ativos</div>
+        <div class="lab-score" style="font-size:32px;" id="stat-active">0</div>
+      </div>
+      <div class="card">
+        <div class="text-muted">Participantes totais</div>
+        <div class="lab-score" style="font-size:32px;" id="stat-total">0</div>
+      </div>
+      <div class="card">
+        <div class="text-muted">Ultima atualizacao</div>
+        <div style="font-size:18px;font-weight:800;" id="stat-updated">--</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="flex-between" style="margin-bottom:16px;">
+        <h2 class="mt-0" style="margin-bottom:0;">Leaderboard em tempo real</h2>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button class="btn btn-secondary btn-sm" type="button" data-filter="all">Todos</button>
+          <button class="btn btn-secondary btn-sm" type="button" data-filter="active">Ativos</button>
+          <button class="btn btn-secondary btn-sm" type="button" data-filter="inactive">Inativos</button>
+        </div>
+      </div>
+      <div id="leaderboard-table">
+        <p class="text-muted">Carregando leaderboard...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/jurados.js"></script>
+</body>
+
+</html>

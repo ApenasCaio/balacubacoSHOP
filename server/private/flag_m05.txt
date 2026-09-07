@@ -1,0 +1,7 @@
+BALACUBACO{upload_inseguro}
+
+Este arquivo fica FORA da pasta publica de uploads (server/private/).
+Se voce esta lendo isto pelo navegador ou via curl atraves do endpoint
+de download de arquivos (/api/files/download), voce acabou de explorar
+um Path Traversal (../../) combinado com Upload Inseguro.
+Missao 05 - BalacubacoSHOP Security Lab.

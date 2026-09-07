@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="headbandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1035"/>
+      <stop offset="50%" stop-color="#5b2a86"/>
+      <stop offset="100%" stop-color="#1e1035"/>
+    </linearGradient>
+    <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a1559"/>
+      <stop offset="100%" stop-color="#180a26"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#5b2a86" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Headband Arch -->
+  <path d="M 105 210 C 105 80, 295 80, 295 210" fill="none" stroke="url(#headbandGrad)" stroke-width="26" stroke-linecap="round" filter="url(#shadow)"/>
+  <path d="M 125 180 C 125 110, 275 110, 275 180" fill="none" stroke="#240c38" stroke-width="12" stroke-linecap="round"/>
+  <!-- Left Ear Cup -->
+  <g transform="translate(70, 180)">
+    <rect x="0" y="0" width="55" height="110" rx="27" fill="url(#cupGrad)" stroke="#7c3aed" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="35" y="10" width="22" height="90" rx="11" fill="#0f071c"/>
+    <circle cx="27" cy="55" r="14" fill="none" stroke="#ff6b35" stroke-width="2"/>
+  </g>
+  <!-- Right Ear Cup -->
+  <g transform="translate(275, 180)">
+    <rect x="0" y="0" width="55" height="110" rx="27" fill="url(#cupGrad)" stroke="#7c3aed" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="-2" y="10" width="22" height="90" rx="11" fill="#0f071c"/>
+    <circle cx="28" cy="55" r="14" fill="none" stroke="#ff6b35" stroke-width="2"/>
+  </g>
+</svg>

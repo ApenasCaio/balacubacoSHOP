@@ -1,0 +1,8 @@
+node_modules/
+data/
+*.db
+.env
+cookies.txt
+server/uploads/avatars/*
+!server/uploads/avatars/.gitkeep
+npm-debug.log*

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produto - BalacubacoSHOP</title>
+<link rel="icon" href="/images/logo.svg">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main class="container">
+  <div class="grid-2" id="product-detail">
+    <p class="text-muted">Carregando produto...</p>
+  </div>
+
+  <section class="card">
+    <h2 class="mt-0">Avaliacoes de clientes</h2>
+    <div id="reviews-list"></div>
+
+    <h3>Deixe sua avaliacao</h3>
+    <form id="review-form">
+      <label>Seu nome</label>
+      <input type="text" id="review-name" placeholder="Como quer aparecer na avaliacao" required>
+      <label>Nota</label>
+      <select id="review-rating">
+        <option value="5">5 - Excelente</option>
+        <option value="4">4 - Bom</option>
+        <option value="3">3 - Regular</option>
+        <option value="2">2 - Ruim</option>
+        <option value="1">1 - Pessimo</option>
+      </select>
+      <label>Comentario</label>
+      <textarea id="review-comment" placeholder="Conte sua experiencia com o produto..." required></textarea>
+      <button class="btn btn-primary" type="submit">Enviar avaliacao</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="/js/app.js"></script>
+<script>
+  window.__LAB_FLAG_XSS__ = 'BALACUBACO{xss_avaliacoes}';
+  (async () => {
+    try {
+      const handle = localStorage.getItem('balacubaco_lab_handle') || '';
+      const data = await fetch(`/api/lab/flag-xss?handle=${encodeURIComponent(handle)}`).then(r => r.json());
+      if (data && data.flag) window.__LAB_FLAG_XSS__ = data.flag;
+    } catch (_e) {}
+  })();
+</script>
+</body>
+</html>

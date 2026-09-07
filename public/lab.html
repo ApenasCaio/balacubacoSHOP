@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Lab - BalacubacoSHOP</title>
+  <link rel="icon" href="/images/logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <main class="container">
+    <div class="lab-hero">
+      <h1 class="mt-0">BalacubacoSHOP Security Lab</h1>
+      <p>Laboratorio educacional de seguranca web. Encontre as vulnerabilidades, capture as flags e some pontos. Uso academico apenas, em ambiente isolado.</p>
+      <div id="handle-area"></div>
+      <div style="margin-top:16px;">
+        <a class="btn btn-secondary" href="/jurados.html">Painel dos jurados</a>
+      </div>
+    </div>
+
+    <div class="card" id="score-card" style="margin-bottom:24px;display:none;">
+      <div class="flex-between">
+        <div>
+          <div class="text-muted">Nome</div>
+          <strong id="score-handle"></strong>
+        </div>
+        <div>
+          <div class="text-muted">Pontuacao total</div>
+          <div class="lab-score" id="score-total">0</div>
+        </div>
+        <div>
+          <div class="text-muted">Missoes concluidas</div>
+          <strong id="score-solved">0 / 8</strong>
+        </div>
+      </div>
+    </div>
+
+    <h2>Missoes</h2>
+    <div class="mission-grid" id="mission-grid">
+      <p class="text-muted">Carregando missoes...</p>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/lab.js"></script>
+</body>
+
+</html>

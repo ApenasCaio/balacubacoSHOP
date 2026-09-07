@@ -1,0 +1,19 @@
+{
+  "name": "balacubacoshop",
+  "version": "1.0.0",
+  "description": "BalacubacoSHOP - Laboratorio de seguranca web intencionalmente vulneravel (uso educacional)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "seed": "node server/db/seed.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

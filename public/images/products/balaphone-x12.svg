@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="phoneBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d1b4e"/>
+      <stop offset="50%" stop-color="#1e1035"/>
+      <stop offset="100%" stop-color="#0f071c"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5b2a86"/>
+      <stop offset="40%" stop-color="#7c3aed"/>
+      <stop offset="80%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ffc93c"/>
+    </linearGradient>
+    <linearGradient id="camMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a2d74"/>
+      <stop offset="100%" stop-color="#24123d"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#5b2a86" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Device Shadow & Frame -->
+  <rect x="110" y="40" width="180" height="320" rx="36" fill="url(#phoneBody)" filter="url(#shadow)" stroke="#6d39a3" stroke-width="2.5"/>
+  <!-- Screen -->
+  <rect x="118" y="48" width="164" height="304" rx="28" fill="url(#screenGrad)"/>
+  <!-- Screen Dynamic Notch / Island -->
+  <rect x="160" y="56" width="80" height="18" rx="9" fill="#0f071c"/>
+  <circle cx="225" cy="65" r="4" fill="#2d1b4e"/>
+  <!-- Modern Wallpaper Graphic Lines -->
+  <path d="M118 240 Q180 180 282 250 L282 352 L118 352 Z" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="200" cy="180" r="38" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <!-- Home Indicator Bar -->
+  <rect x="165" y="340" width="70" height="4" rx="2" fill="rgba(255,255,255,0.7)"/>
+</svg>

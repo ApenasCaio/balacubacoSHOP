@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="speakerBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ffc93c"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#4338ca" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Main Cylinder -->
+  <rect x="130" y="70" width="140" height="260" rx="40" fill="url(#speakerBody)" filter="url(#shadow)" stroke="#6366f1" stroke-width="2"/>
+  <!-- Top Passive Radiator / LED Ring -->
+  <ellipse cx="200" cy="85" rx="55" ry="18" fill="#0f172a" stroke="url(#ringGrad)" stroke-width="4"/>
+  <ellipse cx="200" cy="85" rx="35" ry="10" fill="#312e81"/>
+  <!-- Control Buttons on Mesh -->
+  <circle cx="200" cy="150" r="14" fill="rgba(255,255,255,0.15)"/>
+  <path d="M 194 150 L 206 150 M 200 144 L 200 156" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="190" r="14" fill="rgba(255,255,255,0.15)"/>
+  <path d="M 194 190 L 206 190" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="230" r="14" fill="rgba(255,255,255,0.15)"/>
+  <polygon points="196,223 206,230 196,237" fill="#ffffff"/>
+  <!-- Bottom Accent Ring -->
+  <ellipse cx="200" cy="315" rx="55" ry="16" fill="#0f172a" stroke="url(#ringGrad)" stroke-width="3"/>
+</svg>
