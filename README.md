@@ -58,11 +58,17 @@ npx supabase db push --linked
 
 ### 4. Inicie a aplicacao
 
+Para acesso apenas local:
 ```bash
 npm start
 ```
-
 A aplicacao fica disponivel em `http://localhost:3000`.
+
+Para permitir acesso de outros dispositivos/alunos na mesma rede local:
+```bash
+npm run dev -- --host
+```
+O terminal exibira os enderecos IP da rede local (ex: `http://192.168.x.x:3000`) para que os alunos possam acessar.
 
 ## Estrutura do projeto
 
